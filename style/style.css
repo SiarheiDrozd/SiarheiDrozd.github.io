@@ -2,26 +2,34 @@
 body {
     background-color: #202528;
     font-family: 'Oswald', sans-serif;
-    text-space: 1px;
-    color: #ffffff;
+    color: #fff;
+    height: 100vh;
+    max-height: 100vh;
 }
 header {
     height: 10vh;
+    min-height: 75px;
     background-color: rgb(74, 74, 74);
 }
 main {
     height: 85vh;
+    min-height: 150px;
     padding-top: 20px;
 }
 footer {
     height: 5vh;
+    min-height: 25px;
 }
 a {
-    color: #ffffff;
     text-decoration: underline;
 }
+a:hover {
+    text-shadow: 0 0 10px #ebebeb;
+    text-decoration: none;
+
+}
 a, a:hover, a:focus {
-    color: #ffffff;
+    color: #fff;
 }
 .signature {
     font-family: 'Indie Flower', cursive;
@@ -31,12 +39,18 @@ a, a:hover, a:focus {
     height: 100%;
     margin: auto;
 }
+.wrapper-not {
+    height: 100%;
+    margin: auto;
+}
 .img-fluid {
     object-fit: cover;
     vertical-align: top;
 }
 .carousel {
     height: 100%;
+    max-width: 1900px;
+    margin: auto;
 }
 .carousel-inner {
     height: 100%;
@@ -52,6 +66,7 @@ a, a:hover, a:focus {
     bottom: auto;
     border-radius: 5px;
     padding: 10px;
+    border: 1px solid #8a8a8a;
     background-color: rgba(34, 34, 34, 0.71);
     transform: translate(-50%, -50%);
     text-shadow: 0 0 2px black
@@ -61,6 +76,20 @@ a, a:hover, a:focus {
 }
 .carousel-caption .description{
     font-size: 2rem;
+}
+.carousel-indicators {
+    bottom: 0;
+    height: 30px;
+    width: 222px;
+    background-color: rgba(34, 34, 34, 0.71);
+    left: 50%;
+    margin: 0;
+    transform: translate(-50%);
+    right: initial;
+    top: initial;
+    align-items: center;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
 }
 .wall {
     position: absolute;
@@ -91,10 +120,4 @@ a, a:hover, a:focus {
 }
 .float-left {
     float: left;
-}
-@media only screen
-and (min-device-width: 1366px) {
-    .wrapper {
-        max-width: 1366px;
-    }
 }
