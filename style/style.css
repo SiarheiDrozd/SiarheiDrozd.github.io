@@ -6,12 +6,15 @@ body {
     color: #ffffff;
 }
 header {
-    height: 100px;
-    margin-bottom: 20px;
+    height: 10vh;
     background-color: rgb(74, 74, 74);
 }
 main {
-    height: 90%;
+    height: 85vh;
+    padding-top: 20px;
+}
+footer {
+    height: 5vh;
 }
 a {
     color: #ffffff;
@@ -25,6 +28,7 @@ a, a:hover, a:focus {
 }
 .wrapper {
     max-width: 1280px;
+    height: 100%;
     margin: auto;
 }
 .img-fluid {
@@ -32,7 +36,7 @@ a, a:hover, a:focus {
     vertical-align: top;
 }
 .carousel {
-    height: 720px;
+    height: 100%;
 }
 .carousel-inner {
     height: 100%;
@@ -87,4 +91,10 @@ a, a:hover, a:focus {
 }
 .float-left {
     float: left;
+}
+@media only screen
+and (min-device-width: 1366px) {
+    .wrapper {
+        max-width: 1366px;
+    }
 }
