@@ -9,12 +9,14 @@ body {
 header {
     height: 10vh;
     min-height: 75px;
-    background-color: rgb(74, 74, 74);
+    /*background-color: rgb(74, 74, 74);*/
 }
 main {
     height: 85vh;
     min-height: 150px;
     padding-top: 20px;
+    padding-bottom: 10px;
+    background-color: #E16515;
 }
 footer {
     height: 5vh;
@@ -39,9 +41,48 @@ a, a:hover, a:focus {
     height: 100%;
     margin: auto;
 }
-.wrapper-not {
+.content-wrapper {
     height: 100%;
     margin: auto;
+    background-color: #202528;
+}
+
+.navigation {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    text-align: center;
+    vertical-align: middle;
+    height: 100%;
+    font-size: 3rem;
+    cursor: pointer;
+}
+.front-end-block {
+    height: 100%;
+    width: 35%;
+    padding: 0 10px;
+}
+.cv-block {
+    width: 30%;
+    height: 100%;
+    padding: 0 10px;
+}
+.cg-block {
+    width: 35%;
+    height: 100%;
+    padding: 0 10px;
+
+}
+
+.front-end-block:hover,
+.cv-block:hover,
+.cg-block:hover {
+    background-color: #34393c;
+}
+.front-end-block.active,
+.cv-block.active,
+.cg-block.active {
+    background: linear-gradient(to bottom, rgb(225, 62, 62), rgb(225, 101, 21));
 }
 .img-fluid {
     object-fit: cover;
@@ -97,7 +138,7 @@ a, a:hover, a:focus {
     left: 0;
     right: 0;
     bottom: 0;
-    background-color: rgba(60, 60, 60, 0.15);
+    background-color: rgba(10, 10, 10, 0.1);
     pointer-events: none;
 }
 .carousel-control-prev,
@@ -110,6 +151,8 @@ a, a:hover, a:focus {
 .carousel-control-next {
     background: linear-gradient(to right, rgba(255, 255, 255, 0), rgb(34, 34, 34));
 }
+
+
 .clearfix:after {
     content: "";
     display: block;
@@ -121,3 +164,4 @@ a, a:hover, a:focus {
 .float-left {
     float: left;
 }
+
