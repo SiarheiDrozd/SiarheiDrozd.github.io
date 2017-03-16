@@ -2,17 +2,16 @@ import routing from "./components/routing/routing";
 
 import MainCtrl from "./components/main/mainCtrl";
 import MainService from "./components/main/mainService";
-
 require("angular-ui-router");
 
-MainCtrl.$inject = ["$location", "mainService"];
+let portfolio = angular.module("Portfolio", ["ui.router"]);
 
-let portfolio = angular.module("Portfolio", ["ui.router"])
-    .config(routing)
+angular.module("Portfolio")
+    .config(["$stateProvider", "$urlRouterProvider", routing])
 
     .service("mainService", MainService)
 
-    .controller("mainController", MainCtrl)
+    .controller("mainController", ["$location", "mainService", MainCtrl])
 
     .directive("mainPart", function () {
         return {
