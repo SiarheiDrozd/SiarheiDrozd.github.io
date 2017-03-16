@@ -5,12 +5,14 @@ import MainService from "./components/main/mainService";
 
 require("angular-ui-router");
 
-let todoApp = angular.module("Portfolio", ["ui.router"])
+MainCtrl.$inject = ["$location", "mainService"];
+
+let portfolio = angular.module("Portfolio", ["ui.router"])
     .config(routing)
 
-    .service("mainService", [MainService])
+    .service("mainService", MainService)
 
-    .controller("mainController", ["$location", "mainService", MainCtrl])
+    .controller("mainController", MainCtrl)
 
     .directive("mainPart", function () {
         return {
@@ -40,4 +42,4 @@ let todoApp = angular.module("Portfolio", ["ui.router"])
 
 require("angular-ui-router");
 
-export default todoApp;
+export default portfolio;

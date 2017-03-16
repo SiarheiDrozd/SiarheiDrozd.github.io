@@ -1,4 +1,6 @@
 var path = require("path");
+var ngAnnotatePlugin = require('ng-annotate-webpack-plugin');
+var webpackUglifyJsPlugin = require('webpack-uglify-js-plugin');
 var webpack = require("webpack");
 
 module.exports = {
@@ -28,7 +30,18 @@ module.exports = {
             }
         ]
     },
-    // plugins: [
-    //     new webpack.optimize.UglifyJsPlugin()
-    // ]
+    plugins: [
+        // new webpackUglifyJsPlugin({
+        //     cacheFolder: path.resolve(__dirname, 'public/cached_uglify/'),
+        //     debug: true,
+        //     minimize: true,
+        //     sourceMap: false,
+        //     output: {
+        //         comments: false
+        //     },
+        //     compressor: {
+        //         warnings: false
+        //     }
+        // })
+    ]
 };

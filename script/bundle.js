@@ -63,7 +63,7 @@
 /******/ 	__webpack_require__.p = "";
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 6);
+/******/ 	return __webpack_require__(__webpack_require__.s = 7);
 /******/ })
 /************************************************************************/
 /******/ ([
@@ -4784,6 +4784,23 @@ MainController.prototype.isActive = function (path) {
 Object.defineProperty(exports, "__esModule", {
     value: true
 });
+exports.default = MainService;
+function MainService() {
+    this.getClass = function (location, path) {
+        return location.path().substr(0, path.length) === path ? 'active' : '';
+    };
+}
+
+/***/ }),
+/* 3 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+    value: true
+});
 
 exports.default = function ($stateProvider, $urlRouterProvider) {
     $urlRouterProvider.otherwise("/front-end");
@@ -4800,76 +4817,22 @@ exports.default = function ($stateProvider, $urlRouterProvider) {
 };
 
 /***/ }),
-/* 3 */
+/* 4 */
 /***/ (function(module, exports) {
 
 module.exports = "<div class=\"wrapper\">\r\n    <span>cg</span>\r\n</div>\r\n";
 
 /***/ }),
-/* 4 */
+/* 5 */
 /***/ (function(module, exports) {
 
 module.exports = "<div id=\"carouselExampleIndicators\" class=\"carousel slide\" data-ride=\"carousel\">\r\n    <ol class=\"carousel-indicators\">\r\n        <li data-target=\"#carouselExampleIndicators\" data-slide-to=\"0\" class=\"active\"></li>\r\n        <li data-target=\"#carouselExampleIndicators\" data-slide-to=\"1\"></li>\r\n        <li data-target=\"#carouselExampleIndicators\" data-slide-to=\"2\"></li>\r\n        <li data-target=\"#carouselExampleIndicators\" data-slide-to=\"3\"></li>\r\n        <li data-target=\"#carouselExampleIndicators\" data-slide-to=\"4\"></li>\r\n    </ol>\r\n    <div class=\"carousel-inner\" role=\"listbox\">\r\n        <figure class=\"carousel-item active\">\r\n            <img class=\"d-block img-fluid\" ng-src=\"img/Awesome_Site.jpg\" alt=\"First slide\">\r\n            <figcaption class=\"carousel-caption d-none d-md-block\">\r\n                <h3 class=\"heading\"><a href=\"https://siarheidrozd.github.io/css-framework/\"\r\n                                       target=\"_blank\">Framework</a></h3>\r\n                <p class=\"description\">\r\n                    <span>css-framework(bootstrap plus sass)</span>\r\n                </p>\r\n            </figcaption>\r\n        </figure>\r\n        <figure class=\"carousel-item\">\r\n            <img class=\"d-block img-fluid\" ng-src=\"img/HTML-CSS_Final_Task.jpg\"\r\n                 alt=\"Second slide\">\r\n            <figcaption class=\"carousel-caption d-none d-md-block\">\r\n                <h3 class=\"heading\"><a href=\"https://siarheidrozd.github.io/css-final-task/\" target=\"_blank\">Final\r\n                    task</a></h3>\r\n                <p class=\"description\">\r\n                    <span>Pure CSS and HTML layout</span>\r\n                </p>\r\n            </figcaption>\r\n        </figure>\r\n        <figure class=\"carousel-item\">\r\n            <img class=\"d-block img-fluid\" ng-src=\"img/Responsive.jpg\" alt=\"...\">\r\n            <figcaption class=\"carousel-caption d-none d-md-block\">\r\n                <h3 class=\"heading\">\r\n                    <a href=\"https://siarheidrozd.github.io/html-css-responsive/\" target=\"_blank\">Responsive</a>\r\n                </h3>\r\n                <p class=\"description\">\r\n                    <span>dummy text</span>\r\n                </p>\r\n            </figcaption>\r\n        </figure>\r\n        <figure class=\"carousel-item\">\r\n            <img class=\"d-block img-fluid\" ng-src=\"img/Simple_Game.jpg\" alt=\"...\">\r\n            <figcaption class=\"carousel-caption d-none d-md-block\">\r\n                <h3 class=\"heading\">\r\n                    <a href=\"https://siarheidrozd.github.io/simpleGame/\" target=\"_blank\">Simple Game</a>\r\n                </h3>\r\n                <p class=\"description\">\r\n                    <span>use chrome for better experience</span>\r\n                </p>\r\n            </figcaption>\r\n        </figure>\r\n        <figure class=\"carousel-item\">\r\n            <img class=\"d-block img-fluid\" ng-src=\"img/YouTube.jpg\" alt=\"...\">\r\n            <figcaption class=\"carousel-caption d-none d-md-block\">\r\n                <h3 class=\"heading\">\r\n                    <a href=\"https://siarheidrozd.github.io/Search-Youtube/\" target=\"_blank\">YouTube Searcher</a>\r\n                </h3>\r\n                <p class=\"description\">\r\n                    <span>dummy text</span>\r\n                </p>\r\n            </figcaption>\r\n        </figure>\r\n    </div>\r\n    <div class=\"wall\"></div>\r\n    <a class=\"carousel-control-prev\" href=\"#carouselExampleIndicators\" role=\"button\" data-slide=\"prev\">\r\n        <span class=\"carousel-control-prev-icon\" aria-hidden=\"true\"></span>\r\n        <span class=\"sr-only\">Previous</span>\r\n    </a>\r\n    <a class=\"carousel-control-next\" href=\"#carouselExampleIndicators\" role=\"button\" data-slide=\"next\">\r\n        <span class=\"carousel-control-next-icon\" aria-hidden=\"true\"></span>\r\n        <span class=\"sr-only\">Next</span>\r\n    </a>\r\n</div>\r\n";
 
 /***/ }),
-/* 5 */
+/* 6 */
 /***/ (function(module, exports) {
 
 module.exports = "<div class=\"wrapper\">\r\n    <span>resume</span>\r\n</div>";
-
-/***/ }),
-/* 6 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-    value: true
-});
-
-var _routing = __webpack_require__(2);
-
-var _routing2 = _interopRequireDefault(_routing);
-
-var _mainCtrl = __webpack_require__(1);
-
-var _mainCtrl2 = _interopRequireDefault(_mainCtrl);
-
-var _mainService = __webpack_require__(7);
-
-var _mainService2 = _interopRequireDefault(_mainService);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-__webpack_require__(0);
-
-var todoApp = angular.module("Portfolio", ["ui.router"]).config(_routing2.default).service("mainService", [_mainService2.default]).controller("mainController", ["$location", "mainService", _mainCtrl2.default]).directive("mainPart", function () {
-    return {
-        restrict: "AE",
-        controller: "mainController",
-        controllerAs: "main"
-    };
-}).directive("frontEnd", function () {
-    return {
-        restrict: "AE",
-        template: __webpack_require__(4)
-    };
-}).directive("resumeCv", function () {
-    return {
-        restrict: "AE",
-        template: __webpack_require__(5)
-    };
-}).directive("computerGraphics", function () {
-    return {
-        restrict: "AE",
-        template: __webpack_require__(3)
-    };
-});
-
-__webpack_require__(0);
-
-exports.default = todoApp;
 
 /***/ }),
 /* 7 */
@@ -4881,12 +4844,51 @@ exports.default = todoApp;
 Object.defineProperty(exports, "__esModule", {
     value: true
 });
-exports.default = MainService;
-function MainService() {
-    this.getClass = function (location, path) {
-        return location.path().substr(0, path.length) === path ? 'active' : '';
+
+var _routing = __webpack_require__(3);
+
+var _routing2 = _interopRequireDefault(_routing);
+
+var _mainCtrl = __webpack_require__(1);
+
+var _mainCtrl2 = _interopRequireDefault(_mainCtrl);
+
+var _mainService = __webpack_require__(2);
+
+var _mainService2 = _interopRequireDefault(_mainService);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+__webpack_require__(0);
+
+// MainCtrl.$inject = ["$location", "mainService"];
+
+var todoApp = angular.module("Portfolio", ["ui.router"]).config(_routing2.default).service("mainService", _mainService2.default).controller("mainController", ["$location", "mainService", _mainCtrl2.default]).directive("mainPart", function () {
+    return {
+        restrict: "AE",
+        controller: "mainController",
+        controllerAs: "main"
     };
-}
+}).directive("frontEnd", function () {
+    return {
+        restrict: "AE",
+        template: __webpack_require__(5)
+    };
+}).directive("resumeCv", function () {
+    return {
+        restrict: "AE",
+        template: __webpack_require__(6)
+    };
+}).directive("computerGraphics", function () {
+    return {
+        restrict: "AE",
+        template: __webpack_require__(4)
+    };
+});
+
+__webpack_require__(0);
+
+exports.default = todoApp;
 
 /***/ })
 /******/ ]);
