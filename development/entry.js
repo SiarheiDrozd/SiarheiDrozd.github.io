@@ -1,12 +1,24 @@
 import routing from "./components/routing/routing";
 
-import MainController from "./components/main-controller/main-controller";
+import MainCtrl from "./components/main/mainCtrl";
+import MainService from "./components/main/mainService";
 
 require("angular-ui-router");
 
 let todoApp = angular.module("Portfolio", ["ui.router"])
     .config(routing)
-    .controller("MainController", [MainController])
+
+    .service("mainService", [MainService])
+
+    .controller("mainController", ["$location", "mainService", MainCtrl])
+
+    .directive("mainPart", function () {
+        return {
+            restrict    : "AE",
+            controller: "mainController",
+            controllerAs: "main"
+        }
+    })
     .directive("frontEnd", function () {
         return {
             restrict    : "AE",
@@ -25,5 +37,7 @@ let todoApp = angular.module("Portfolio", ["ui.router"])
             template    : require("./components/computer-graphics/computer-graphics.html")
         }
     });
+
+require("angular-ui-router");
 
 export default todoApp;

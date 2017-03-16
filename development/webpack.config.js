@@ -1,4 +1,5 @@
 var path = require("path");
+var webpack = require("webpack");
 
 module.exports = {
     entry: "./entry.js",
@@ -26,5 +27,8 @@ module.exports = {
                 loader: 'html-loader'
             }
         ]
-    }
+    },
+    // plugins: [
+    //     new webpack.optimize.UglifyJsPlugin()
+    // ]
 };
