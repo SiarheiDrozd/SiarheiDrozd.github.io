@@ -41,12 +41,17 @@ a, a:hover, a:focus {
     height: 100%;
     margin: auto;
 }
-.content-wrapper {
+.inner {
     height: 100%;
-    margin: auto;
+    width: 100%;
     background-color: #202528;
 }
-
+.content-wrapper {
+    width: 100%;
+    height: 100%;
+    display: block;
+    background-color: #202528;
+}
 .navigation {
     display: flex;
     flex-direction: row;
