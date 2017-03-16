@@ -23,8 +23,13 @@ module.exports = {
             },
             {
                 test: /\.html$/,
-                exclude: /(node_modules|docs)/,
+                exclude: /(node_modules)/,
                 loader: 'html-loader'
+            },
+            {
+                test: /\.css$/,
+                exclude: /(node_modules)/,
+                loader: 'css-loader'
             }
         ]
     },
