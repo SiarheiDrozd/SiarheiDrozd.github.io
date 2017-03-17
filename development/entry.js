@@ -3,9 +3,6 @@ import routing from "./components/routing/routing";
 import MainCtrl from "./components/main/mainCtrl";
 import MainService from "./components/main/mainService";
 require("angular-ui-router");
-// require("./components/routing-animation/anim-in-out.js");
-// require("./components/routing-animation/anim-in-out.css");
-
 
 let portfolio = angular.module("portfolio", ['ui.router', 'ngAnimate'])
     .config(["$stateProvider", "$urlRouterProvider", routing])
