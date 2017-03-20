@@ -266,7 +266,7 @@ a.active {
     padding: 0 5px;
     line-height: 1.85rem;
     background: #34393c;
-    height: 1.85rem;
+    min-height: 1.85rem;
 }
 .front-end_column .skill {
     margin: 0 5px 5px 0;
