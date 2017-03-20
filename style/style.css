@@ -240,16 +240,44 @@ a.active {
     display: inline-block;
     font-size: 1rem;
     vertical-align: top;
+    padding: 10px;
 }
-
+.resume-cv_column {
+    background-color: #34393c;
+    height: 100%;
+    width: 50%;
+}
+.resume-cv {
+    margin: auto;
+}
 .front-end_column {
     width: 25%;
 }
-
-.resume-cv_column {
-    width: 50%;
+.skills-set_heading {
+    text-align: center;
+    border-bottom: 1px solid #8a8a8a;
 }
-
+.skills-set h3 {
+    clear: both;
+}
+.skill {
+    display: block;
+    width: auto;
+    padding: 0 5px;
+    line-height: 1.85rem;
+    background: #34393c;
+    height: 1.85rem;
+}
+.front-end_column .skill {
+    margin: 0 5px 5px 0;
+    background: #e16515;
+    float: left;
+}
+.computer-graphics_column .skill{
+    margin: 0 0 5px 5px;
+    background: #e13e3d;
+    float: right;
+}
 .computer-graphics_column {
     width: 25%;
 }
@@ -276,5 +304,30 @@ and (max-device-width: 580px) {
 
     .navigation {
         font-size: 2.5rem;
+    }
+}
+
+@media print {
+    *, a {
+        color: #000;
+        margin: 0;
+        padding: 0;
+    }
+    .front-end-block {
+        text-align: left;
+    }
+    .cg-block {
+        text-align: right;
+    }
+    .skills-set_heading {
+        display: none;
+    }
+    .cv-column {
+        margin-top: 0;
+    }
+    .resume-cv_column {
+        border: 1px solid #000000;
+        border-top: transparent;
+        border-bottom: transparent;
     }
 }
