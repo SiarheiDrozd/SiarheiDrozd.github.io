@@ -27,7 +27,10 @@ footer {
     height: 25px;
     min-height: 25px;
 }
-
+.contacts-list {
+    list-style: none;
+    padding: 0;
+}
 a {
     text-decoration: underline;
 }
@@ -250,6 +253,14 @@ a.active {
 .resume-cv {
     margin: auto;
 }
+.avatar {
+    position: relative;
+    margin: auto;
+    display: block;
+    width: 150px;
+    height: 150px;
+    /*border-radius: 69%;*/
+}
 .front-end_column {
     width: 25%;
 }
@@ -282,19 +293,19 @@ a.active {
     width: 25%;
 }
 
-.clearfix:after {
-    content: "";
-    display: block;
-    clear: both;
-}
+/*.clearfix:after {*/
+    /*content: "";*/
+    /*display: block;*/
+    /*clear: both;*/
+/*}*/
 
-.float-right {
-    float: right;
-}
+/*.float-right {*/
+    /*float: right;*/
+/*}*/
 
-.float-left {
-    float: left;
-}
+/*.float-left {*/
+    /*float: left;*/
+/*}*/
 
 @media only screen
 and (max-device-width: 580px) {
