@@ -57,7 +57,12 @@ a.active {
     height: 100%;
     margin: auto;
 }
-
+.fa.header-ico {
+    display: none;
+}
+.header-text {
+    display: inline;
+}
 .content-wrapper {
     position: relative;
     width: 100%;
@@ -259,7 +264,6 @@ a.active {
     display: block;
     width: 150px;
     height: 150px;
-    /*border-radius: 69%;*/
 }
 .front-end_column {
     width: 25%;
@@ -293,28 +297,22 @@ a.active {
     width: 25%;
 }
 
-/*.clearfix:after {*/
-    /*content: "";*/
-    /*display: block;*/
-    /*clear: both;*/
-/*}*/
-
-/*.float-right {*/
-    /*float: right;*/
-/*}*/
-
-/*.float-left {*/
-    /*float: left;*/
-/*}*/
-
 @media only screen
 and (max-device-width: 580px) {
     html {
         /*font-size: 12px;*/
     }
-
+    .fa.header-ico {
+        display: inline;
+    }
+    .header-text {
+        display: none;
+    }
     .navigation {
         font-size: 2.5rem;
+    }
+    .navigation > a {
+        text-decoration: none;
     }
 }
 
