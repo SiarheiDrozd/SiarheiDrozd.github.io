@@ -1,6 +1,7 @@
 html, body {
     width: 100%;
     height: 100%;
+    font-size: 16px;
 }
 
 body {
@@ -27,12 +28,21 @@ footer {
     height: 25px;
     min-height: 25px;
 }
-.contacts-list {
-    list-style: none;
-    padding: 0;
+
+h1, h2 {
+    font-size: 3rem;
+    height: 100%;
+    line-height: inherit;
+}
+h3, h4 {
+    clear: both;
 }
 a {
     text-decoration: underline;
+}
+
+a, a:hover, a:focus {
+    color: #fff;
 }
 
 a:hover {
@@ -40,16 +50,13 @@ a:hover {
     text-decoration: none;
 }
 
-a, a:hover, a:focus {
-    color: #fff;
-}
-
 a.active {
     text-decoration: none;
 }
 
-.signature {
-    font-family: 'Indie Flower', cursive;
+.contacts-list {
+    list-style: none;
+    padding: 0;
 }
 
 .wrapper {
@@ -245,32 +252,38 @@ a.active {
     vertical-align: top;
     padding: 10px;
 }
+
 .resume-cv_column {
     background-color: #34393c;
     height: 100%;
     width: 50%;
 }
+
 .resume-cv {
     margin: auto;
 }
+
 .avatar {
     position: relative;
     margin: auto;
     display: block;
     width: 150px;
     height: 150px;
-    /*border-radius: 69%;*/
 }
+
 .front-end_column {
     width: 25%;
 }
+
 .skills-set_heading {
     text-align: center;
     border-bottom: 1px solid #8a8a8a;
 }
+
 .skills-set h3 {
     clear: both;
 }
+
 .skill {
     display: block;
     width: auto;
@@ -279,40 +292,46 @@ a.active {
     background: #34393c;
     min-height: 1.85rem;
 }
+
 .front-end_column .skill {
     margin: 0 5px 5px 0;
     background: #e16515;
     float: left;
 }
-.computer-graphics_column .skill{
+
+.computer-graphics_column .skill {
     margin: 0 0 5px 5px;
     background: #e13e3d;
     float: right;
 }
+
 .computer-graphics_column {
     width: 25%;
 }
 
-/*.clearfix:after {*/
-    /*content: "";*/
-    /*display: block;*/
-    /*clear: both;*/
-/*}*/
+.links-set {
+    list-style: none;
+    font-size: 0;
+    padding: 0;
+}
 
-/*.float-right {*/
-    /*float: right;*/
-/*}*/
+.links-set li {
+    display: inline-block;
+    font-size: 1rem;
+}
 
-/*.float-left {*/
-    /*float: left;*/
-/*}*/
+.links-set li:not(:first-child) {
+    margin-left: 5px;
+}
 
+.signature {
+    font-family: 'Indie Flower', cursive;
+}
+.fa {
+    color: #ffffff;
+}
 @media only screen
 and (max-device-width: 580px) {
-    html {
-        /*font-size: 12px;*/
-    }
-
     .navigation {
         font-size: 2.5rem;
     }
@@ -324,18 +343,23 @@ and (max-device-width: 580px) {
         margin: 0;
         padding: 0;
     }
+
     .front-end-block {
         text-align: left;
     }
+
     .cg-block {
         text-align: right;
     }
+
     .skills-set_heading {
         display: none;
     }
+
     .cv-column {
         margin-top: 0;
     }
+
     .resume-cv_column {
         border: 1px solid #000000;
         border-top: transparent;
