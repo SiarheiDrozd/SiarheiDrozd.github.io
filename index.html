@@ -5,9 +5,12 @@
     <title>CV-Portfolio</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    <link rel="icon" href="./favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css"
           integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
     <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="style/font-awesome.min.css">
     <link href="https://fonts.googleapis.com/css?family=Indie+Flower|Oswald" rel="stylesheet">
 
     <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js"
@@ -28,13 +31,16 @@
     <div class="wrapper">
         <nav class="navigation">
             <a id="front-end-page_1" href="#/front-end" ng-class="{ active: main.isActive('/front-end') }" class="front-end-block">
-                <h2>Front End</h2>
+                <i class="fa fa-code header-ico" aria-hidden="true"></i>
+                <h2 class="header-text">Front End</h2>
             </a>
             <a id="resume-cv_2" href="#/resume-cv" ng-class="{ active: main.isActive('/resume-cv') }" class="cv-block">
-                <h1>CV</h1>
+                <i class="fa fa-id-card-o header-ico" agitria-hidden="true"></i>
+                <h1 class="header-text">CV</h1>
             </a>
             <a id="computer-graphics_3" href="#/computer-graphics" ng-class="{ active: main.isActive('/computer-graphics') }" class="cg-block">
-                <h2>CG</h2>
+                <i class="fa fa-paint-brush header-ico" aria-hidden="true"></i>
+                <h2 class="header-text">CG</h2>
             </a>
         </nav>
     </div>

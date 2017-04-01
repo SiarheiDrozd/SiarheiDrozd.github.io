@@ -34,9 +34,11 @@ h1, h2 {
     height: 100%;
     line-height: inherit;
 }
+
 h3, h4 {
     clear: both;
 }
+
 a {
     text-decoration: underline;
 }
@@ -63,6 +65,10 @@ a.active {
     max-width: 1280px;
     height: 100%;
     margin: auto;
+}
+
+.fa.header-ico {
+    display: none;
 }
 
 .content-wrapper {
@@ -327,13 +333,23 @@ a.active {
 .signature {
     font-family: 'Indie Flower', cursive;
 }
-.fa {
-    color: #ffffff;
-}
+
 @media only screen
 and (max-device-width: 580px) {
+    .fa.header-ico {
+        display: inline;
+    }
+
+    .header-text {
+        display: none;
+    }
+
     .navigation {
         font-size: 2.5rem;
+    }
+
+    .navigation > a {
+        text-decoration: none;
     }
 }
 
