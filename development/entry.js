@@ -37,6 +37,4 @@ let portfolio = angular.module("portfolio", ['ui.router', 'ngAnimate'])
         }
     });
 
-require("angular-ui-router");
-
 export default portfolio;
