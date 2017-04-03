@@ -269,6 +269,30 @@ a.active {
     margin: auto;
 }
 
+.personal-info {
+    font-size: 0;
+}
+
+.personal-info dd,
+.personal-info dt {
+    font-size: 1rem;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.personal-info dt {
+    width: 25%;
+}
+
+.personal-info dd {
+    width: 75%;
+}
+
+.personal-info_line {
+    padding-top: 8px;
+    border-top: 1px solid #fff;
+}
+
 .avatar {
     position: relative;
     margin: auto;
