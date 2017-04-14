@@ -250,6 +250,7 @@ a.active {
 
 .resume-cv_wrapper {
     font-size: 0;
+    overflow: auto;
 }
 
 .cv-column {
@@ -261,7 +262,7 @@ a.active {
 
 .resume-cv_column {
     background-color: #34393c;
-    height: 100%;
+    min-height: 100%;
     width: 50%;
 }
 
@@ -355,6 +356,7 @@ a.active {
 }
 
 .signature {
+    padding: 0 10px;
     font-family: 'Indie Flower', cursive;
 }
 
